@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 
-	"rsc.io/quote"
+	"github.com/SebastianGoeb/advent-of-code-2025/greetings"
 )
 
 func main() {
-	fmt.Println(quote.Go())
+	message := greetings.Hello("Gladys")
+	fmt.Println(message)
 }
