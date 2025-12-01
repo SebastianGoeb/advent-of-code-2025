@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/SebastianGoeb/advent-of-code-2025/greetings"
+	"github.com/SebastianGoeb/advent-of-code-2025/days"
 )
 
 func main() {
@@ -12,14 +12,10 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	names := []string{"Gladys", "Samantha", "Darrin"}
-
-	// request greetings
-	messages, err  := greetings.Hellos(names)
-
+	result, err := days.Day1()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(messages)
+	fmt.Println(result)
 }
